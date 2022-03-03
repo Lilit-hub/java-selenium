@@ -1,0 +1,11 @@
+{
+  "name": "javaselenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ".node_modules/.bin/cucumber-js --format=json > test-result.json"
+  },
+  "author": "Lilith",
+  "license": "ISC"
+}

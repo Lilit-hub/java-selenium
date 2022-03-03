@@ -1,0 +1,129 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-03T21:40:42.605Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2212000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "as-a-user--i-want-to-be-able-to-login-into-app;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7331000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Login page is open",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2220000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I type \"standard_user\" as username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.enterUsername(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I type \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.enterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4413000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Login button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.clickLoginBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2395000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "URL should contain \"inventory\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "inventory",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.urlContains(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I want to be able to login into app",
+    "description": "",
+    "id": "as-a-user--i-want-to-be-able-to-login-into-app",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/Login.feature",
+    "tags": []
+  }
+]
