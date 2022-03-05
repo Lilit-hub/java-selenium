@@ -1,13 +1,34 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-03-03T21:40:42.605Z",
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1144152500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loggedIn()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-04T21:27:09.572Z",
         "before": [
           {
             "result": {
-              "duration": 2212000000,
+              "duration": 3511740300,
               "status": "passed"
             },
             "match": {
@@ -15,14 +36,485 @@
             }
           }
         ],
-        "line": 4,
+        "line": 15,
+        "name": "Filter items by Name (A to Z)",
+        "description": "",
+        "id": "as-a-user-i-want-to-be-able-to-filter-products;filter-items-by-\u003cfiltertype\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 700209700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 62975300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"PRODUCTS\" page is open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PRODUCTS",
+                  "offset": 1
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.currentPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67182400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I filter items by \"Name (A to Z)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (A to Z)",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.filterItems(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 261553300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify that items are ordered by \"Name (A to Z)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (A to Z)",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.filter(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@filter"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1251782900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loggedIn()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-04T21:27:15.446Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5342453900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Filter items by Name (Z to A)",
+        "description": "",
+        "id": "as-a-user-i-want-to-be-able-to-filter-products;filter-items-by-\u003cfiltertype\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 715682800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36026200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"PRODUCTS\" page is open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PRODUCTS",
+                  "offset": 1
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.currentPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 91948500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I filter items by \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.filterItems(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 229425500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify that items are ordered by \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.filter(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@filter"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1137676100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loggedIn()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-04T21:27:23.129Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2281687700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Filter items by Price (low to high)",
+        "description": "",
+        "id": "as-a-user-i-want-to-be-able-to-filter-products;filter-items-by-\u003cfiltertype\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 702166100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 39061000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"PRODUCTS\" page is open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PRODUCTS",
+                  "offset": 1
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.currentPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113413700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I filter items by \"Price (low to high)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price (low to high)",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.filterItems(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166406100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify that items are ordered by \"Price (low to high)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price (low to high)",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.filter(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@filter"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 961835300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loggedIn()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-04T21:27:27.584Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1750475200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Filter items by Price (high to low)",
+        "description": "",
+        "id": "as-a-user-i-want-to-be-able-to-filter-products;filter-items-by-\u003cfiltertype\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 688107400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 43936700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"PRODUCTS\" page is open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PRODUCTS",
+                  "offset": 1
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.currentPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 92283200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I filter items by \"Price (high to low)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price (high to low)",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.filterItems(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 338372600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify that items are ordered by \"Price (high to low)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price (high to low)",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinitions.ProductsSteps.filter(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@filter"
+          }
+        ]
+      }
+    ],
+    "name": "As a user I want to be able to filter products",
+    "description": "",
+    "id": "as-a-user-i-want-to-be-able-to-filter-products",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/Filter.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@filter",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-04T21:27:31.468Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2915991400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 5,
         "name": "Login with valid credentials",
         "description": "",
         "id": "as-a-user--i-want-to-be-able-to-login-into-app;login-with-valid-credentials",
         "after": [
           {
             "result": {
-              "duration": 105000000,
+              "duration": 715789500,
               "status": "passed"
             },
             "match": {
@@ -35,10 +527,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7331000000,
+              "duration": 619097800,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "Login page is open",
             "match": {
               "location": "StepDefinitions.LoginSteps.loginPage()"
@@ -47,10 +539,10 @@
           },
           {
             "result": {
-              "duration": 2220000000,
+              "duration": 98401300,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I type \"standard_user\" as username",
             "match": {
               "arguments": [
@@ -65,10 +557,10 @@
           },
           {
             "result": {
-              "duration": 85000000,
+              "duration": 98916100,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I type \"secret_sauce\" as password",
             "match": {
               "arguments": [
@@ -83,10 +575,10 @@
           },
           {
             "result": {
-              "duration": 4413000000,
+              "duration": 127885500,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I click on Login button",
             "match": {
               "location": "StepDefinitions.LoginSteps.clickLoginBtn()"
@@ -95,10 +587,10 @@
           },
           {
             "result": {
-              "duration": 2395000000,
+              "duration": 5924400,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "URL should contain \"inventory\"",
             "match": {
               "arguments": [
@@ -114,6 +606,413 @@
         ],
         "tags": [
           {
+            "name": "@test"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-04T21:27:36.065Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1431674100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "as-a-user--i-want-to-be-able-to-login-into-app;login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 662352500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 662522000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Login page is open",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 92638600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I type \"invalid_username\" as username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid_username",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.enterUsername(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89130100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I type \"invalid_password\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid_password",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.enterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68247300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on Login button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.clickLoginBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33208500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.iShouldSeeErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-04T21:27:39.113Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1248645800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Login with empty username",
+        "description": "",
+        "id": "as-a-user--i-want-to-be-able-to-login-into-app;login-with-empty-username",
+        "after": [
+          {
+            "result": {
+              "duration": 678770100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 632096700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Login page is open",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103824100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I type \"invalid_password\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid_password",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.enterPassword(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68741400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on Login button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.clickLoginBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39100100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see error message \"Epic sadface: Username is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username is required",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.iShouldSeeErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-04T21:27:41.893Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1245313700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Login with empty password",
+        "description": "",
+        "id": "as-a-user--i-want-to-be-able-to-login-into-app;login-with-empty-password",
+        "after": [
+          {
+            "result": {
+              "duration": 682254000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 608011700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Login page is open",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 99771000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I type \"invalid_username\" as username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid_username",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.enterUsername(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62167700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on Login button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.clickLoginBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31682500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should see error message \"Epic sadface: Password is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Password is required",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.iShouldSeeErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-04T21:27:44.630Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1294720000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.initDriver()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Logout from account",
+        "description": "",
+        "id": "as-a-user--i-want-to-be-able-to-login-into-app;logout-from-account",
+        "after": [
+          {
+            "result": {
+              "duration": 723986300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 945907600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.loggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 695333400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click on \"Logout\" button from sidebar menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logout",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.clickBtnSidebarMenu(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32495500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should be redirected to login page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.iShouldBeRedirectedToLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
             "name": "@login"
           }
         ]
@@ -124,6 +1023,23 @@
     "id": "as-a-user--i-want-to-be-able-to-login-into-app",
     "keyword": "Feature",
     "uri": "file:src/test/features/Login.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

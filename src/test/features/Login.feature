@@ -1,11 +1,12 @@
-
+@test
+@login
 Feature: As a user, I want to be able to login into app
-  @login
+
   Scenario: Login with valid credentials
     Given Login page is open
-    When I type "standard_user" as username
+    And I type "standard_user" as username
     And I type "secret_sauce" as password
-    And I click on Login button
+    When I click on Login button
     Then URL should contain "inventory"
 
   Scenario: Login with invalid credentials

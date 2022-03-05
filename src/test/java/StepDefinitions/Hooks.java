@@ -3,8 +3,6 @@ import BaseClass.BaseClass;
 import io.cucumber.java.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
-
 public class Hooks extends BaseClass {
 
     private BaseClass base;
@@ -16,10 +14,9 @@ public class Hooks extends BaseClass {
     @Before
     public void initDriver() {
         System.out.println("Open browser");
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\david\\Documents\\java-selenium\\driver\\chromedriver.exe");
         base.driver = new ChromeDriver();
         base.driver.manage().window().maximize();
-//        base.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @After

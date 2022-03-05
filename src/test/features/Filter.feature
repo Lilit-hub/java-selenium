@@ -1,3 +1,5 @@
+@test
+@filter
 Feature: As a user I want to be able to filter products
 
   Background:

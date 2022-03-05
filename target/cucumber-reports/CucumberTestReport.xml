@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.588">
-<testcase classname="As a user, I want to be able to login into app" name="Login with valid credentials" time="18.972">
-<system-out><![CDATA[Given Login page is open....................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="39.043">
+    <testcase classname="As a user I want to be able to filter products" name="Filter items by Name (A to Z)" time="5.848">
+        <system-out><![CDATA[Given User is logged in.....................................................passed
+Given "PRODUCTS" page is open...............................................passed
+When I filter items by "Name (A to Z)"......................................passed
+Then I verify that items are ordered by "Name (A to Z)".....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user I want to be able to filter products" name="Filter items by Name (Z to A)" time="7.674">
+        <system-out><![CDATA[Given User is logged in.....................................................passed
+Given "PRODUCTS" page is open...............................................passed
+When I filter items by "Name (Z to A)"......................................passed
+Then I verify that items are ordered by "Name (Z to A)".....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user I want to be able to filter products" name="Filter items by Price (low to high)" time="4.447">
+        <system-out><![CDATA[Given User is logged in.....................................................passed
+Given "PRODUCTS" page is open...............................................passed
+When I filter items by "Price (low to high)"................................passed
+Then I verify that items are ordered by "Price (low to high)"...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user I want to be able to filter products" name="Filter items by Price (high to low)" time="3.877">
+        <system-out><![CDATA[Given User is logged in.....................................................passed
+Given "PRODUCTS" page is open...............................................passed
+When I filter items by "Price (high to low)"................................passed
+Then I verify that items are ordered by "Price (high to low)"...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user, I want to be able to login into app" name="Login with valid credentials" time="4.59">
+        <system-out><![CDATA[Given Login page is open....................................................passed
 When I type "standard_user" as username.....................................passed
 And I type "secret_sauce" as password.......................................passed
 And I click on Login button.................................................passed
 Then URL should contain "inventory".........................................passed
 ]]></system-out>
-</testcase>
+    </testcase>
+    <testcase classname="As a user, I want to be able to login into app" name="Login with invalid credentials" time="3.043">
+        <system-out><![CDATA[Given Login page is open....................................................passed
+When I type "invalid_username" as username..................................passed
+And I type "invalid_password" as password...................................passed
+And I click on Login button.................................................passed
+Then I should see error message "Epic sadface: Username and password do not match any user in this service".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user, I want to be able to login into app" name="Login with empty username" time="2.774">
+        <system-out><![CDATA[Given Login page is open....................................................passed
+When I type "invalid_password" as password..................................passed
+And I click on Login button.................................................passed
+Then I should see error message "Epic sadface: Username is required"........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user, I want to be able to login into app" name="Login with empty password" time="2.732">
+        <system-out><![CDATA[Given Login page is open....................................................passed
+When I type "invalid_username" as username..................................passed
+And I click on Login button.................................................passed
+Then I should see error message "Epic sadface: Password is required"........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As a user, I want to be able to login into app" name="Logout from account" time="3.695">
+        <system-out><![CDATA[Given User is logged in.....................................................passed
+When I click on "Logout" button from sidebar menu...........................passed
+Then I should be redirected to login page...................................passed
+]]></system-out>
+    </testcase>
 </testsuite>
